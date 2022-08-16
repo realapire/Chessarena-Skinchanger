@@ -8,7 +8,8 @@ let headers = {
 
 let url = "https://adventure.chessarena.io/api/me/profile"
 
-{"nickname":"","nickname_tag":"","is_guest":true,"client_data":{"ColorId":37,"SkinId":4,"ShowKeybindings":true,"ControlType":0,"PreselectLastPiece":false,"AlwaysShowNames":false,"ShowFrameRatePing":false,"LowFrameRate":false,"AutoCastItems":false,"CenteringWithKeybinding":0},"server_data":{}}
+let payload = {"nickname":"","nickname_tag":"","is_guest":true,"client_data":{"ColorId":37,"SkinId":4,"ShowKeybindings":true,"ControlType":0,"PreselectLastPiece":false,"AlwaysShowNames":false,"ShowFrameRatePing":false,"LowFrameRate":false,"AutoCastItems":false,"CenteringWithKeybinding":0},"server_data":{}}
+
 fetch(url, {
 	method: "post",
 	headers: headers,
